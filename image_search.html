@@ -10,6 +10,14 @@
                 <li><a href="index.html">Search Page</a></li>
             </ul>
         </nav>
-        Image Search
-    </body>
+
+    <!-- Form Image search -->
+        <!-- Form submits to search endpoint to show the results -->
+        <form action="https://images.google.com/search">
+            <input type="text" name="q">
+            <input type="submit" value="Image Search">
+            <!-- Hidden input to send the parameter to tell Google that this is a image search (tbm/isch) -->
+            <input type="hidden" name="tbm" value="isch">
+        </form>
+    </body> 
 </html>
